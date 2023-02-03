@@ -28,7 +28,7 @@ describe("validateEmail", function() {
 
         /*-------------Завдання №2-------------*/
         it('Less than 5 characters', function(){
-            assert.isFalse(validateEmail('@gmail'), 'More than 4')
+            assert.equal(validateEmail('abcd'), false, 'Less than 5')
         })
 
         /*-------------Завдання №3-------------*/

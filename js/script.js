@@ -4,14 +4,14 @@ function validateEmail(email){
     if (!email.split('').includes('@') || email.split('')[0] == '@') return false
     
     /*-------------Завдання №2-------------*/
-    // if (email.length > 5) return false
-    // for(let i = 0; i < email.length; i++)
-    //     {
-    //     if (email.split(email[i]).length-1 > 1) 
-    //         {
-    //             return false;
-    //         }  
-    //     }
+    if (email.length < 5) return false
+    for(let i = 0; i < email.length; i++)
+        {
+        if (email.split(email[i]).length-1 > 1) 
+            {
+                return false;
+            }  
+        }
 
     /*-------------Завдання №3-------------*/
     let count = email.split("@").length - 1;
